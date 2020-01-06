@@ -6,7 +6,7 @@ WORKDIR /usr/apps/hello-docker/
 
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
-  apt-get update && \
+  apt-get update --fix-missing && \
   apt-get install -y nodejs && \
   apt-get install -y npm
 
