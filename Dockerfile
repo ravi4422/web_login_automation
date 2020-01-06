@@ -6,6 +6,10 @@ WORKDIR /usr/apps/hello-docker/
 
 RUN apt-get -y update
 
+RUN apt-get -y install g++
+
+RUN apt-get -y install gcc
+
 RUN apt-get install -y nodejs
 
 RUN apt-get install -y npm
