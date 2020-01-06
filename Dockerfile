@@ -1,8 +1,10 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 MAINTAINER ybmsr <ybmadhu404@gmail.com>
 
 WORKDIR /usr/apps/hello-docker/
+
+RUN apt-get -y update
 
 RUN apt-get install -y nodejs
 
